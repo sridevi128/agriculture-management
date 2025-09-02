@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<!-- saved from url=(0058)https://readdy.link/share/c9516baa6a493b312de7950744516ca1 -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script type="text/javascript" crossorigin="anonymous" async="" src="./Agriculture Management_files/array.js.download"></script><script src="./Agriculture Management_files/e.js.download"></script>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agriculture Management</title>
+    <script src="./Agriculture Management_files/3.4.16"></script>
+    <link href="./Agriculture Management_files/remixicon.min.css" rel="stylesheet">
+    <script src="./Agriculture Management_files/echarts.min.js.download"></script>
+    <style>
+        :where([class^="ri-"])::before { content: "\f3c2"; }
+        .range-slider::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 16px;
+            height: 16px;
+            background: #4CAF50;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+        .custom-checkbox:checked {
+            background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='white' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M12.207 4.793a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0l-2-2a1 1 0 011.414-1.414L6.5 9.086l4.293-4.293a1 1 0 011.414 0z'/%3e%3c/svg%3e");
+        }
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#4CAF50',
+                        secondary: '#81C784'
+                    },
+                    borderRadius: {
+                        'none': '0px',
+                        'sm': '4px',
+                        DEFAULT: '8px',
+                        'md': '12px',
+                        'lg': '16px',
+                        'xl': '20px',
+                        '2xl': '24px',
+                        '3xl': '32px',
+                        'full': '9999px',
+                        'button': '8px'
+                    }
+                }
+            }
+        }
+    </script>
+<style>*, ::before, ::after{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/* ! tailwindcss v3.4.16 | MIT License | https://tailwindcss.com */*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::after,::before{--tw-content:''}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.fixed{position:fixed}.absolute{position:absolute}.relative{position:relative}.bottom-0{bottom:0px}.left-0{left:0px}.right-0{right:0px}.right-1{right:0.25rem}.top-0{top:0px}.top-1{top:0.25rem}.z-50{z-index:50}.col-span-2{grid-column:span 2 / span 2}.mb-4{margin-bottom:1rem}.mb-6{margin-bottom:1.5rem}.mt-1{margin-top:0.25rem}.flex{display:flex}.grid{display:grid}.h-10{height:2.5rem}.h-16{height:4rem}.h-2{height:0.5rem}.h-4{height:1rem}.h-48{height:12rem}.h-\[400px\]{height:400px}.min-h-screen{min-height:100vh}.w-10{width:2.5rem}.w-2{width:0.5rem}.w-4{width:1rem}.grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr))}.flex-col{flex-direction:column}.items-start{align-items:flex-start}.items-center{align-items:center}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.justify-around{justify-content:space-around}.gap-2{gap:0.5rem}.gap-3{gap:0.75rem}.gap-4{gap:1rem}.gap-6{gap:1.5rem}.space-y-4 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1rem * var(--tw-space-y-reverse))}.overflow-hidden{overflow:hidden}.\!rounded-button{border-radius:8px !important}.rounded{border-radius:8px}.rounded-full{border-radius:9999px}.rounded-lg{border-radius:16px}.border-2{border-width:2px}.border-t{border-top-width:1px}.border-gray-300{--tw-border-opacity:1;border-color:rgb(209 213 219 / var(--tw-border-opacity, 1))}.bg-gray-100{--tw-bg-opacity:1;background-color:rgb(243 244 246 / var(--tw-bg-opacity, 1))}.bg-gray-50{--tw-bg-opacity:1;background-color:rgb(249 250 251 / var(--tw-bg-opacity, 1))}.bg-primary{--tw-bg-opacity:1;background-color:rgb(76 175 80 / var(--tw-bg-opacity, 1))}.bg-red-500{--tw-bg-opacity:1;background-color:rgb(239 68 68 / var(--tw-bg-opacity, 1))}.bg-white{--tw-bg-opacity:1;background-color:rgb(255 255 255 / var(--tw-bg-opacity, 1))}.bg-cover{background-size:cover}.bg-center{background-position:center}.p-2{padding:0.5rem}.p-6{padding:1.5rem}.px-3{padding-left:0.75rem;padding-right:0.75rem}.px-4{padding-left:1rem;padding-right:1rem}.px-6{padding-left:1.5rem;padding-right:1.5rem}.py-1\.5{padding-top:0.375rem;padding-bottom:0.375rem}.py-2{padding-top:0.5rem;padding-bottom:0.5rem}.pb-20{padding-bottom:5rem}.pt-20{padding-top:5rem}.text-sm{font-size:0.875rem;line-height:1.25rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.text-xs{font-size:0.75rem;line-height:1rem}.font-bold{font-weight:700}.font-medium{font-weight:500}.font-semibold{font-weight:600}.text-gray-500{--tw-text-opacity:1;color:rgb(107 114 128 / var(--tw-text-opacity, 1))}.text-gray-600{--tw-text-opacity:1;color:rgb(75 85 99 / var(--tw-text-opacity, 1))}.text-primary{--tw-text-opacity:1;color:rgb(76 175 80 / var(--tw-text-opacity, 1))}.text-white{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.shadow{--tw-shadow:0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-lg{--tw-shadow:0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-sm{--tw-shadow:0 1px 2px 0 rgb(0 0 0 / 0.05);--tw-shadow-colored:0 1px 2px 0 var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.checked\:border-primary:checked{--tw-border-opacity:1;border-color:rgb(76 175 80 / var(--tw-border-opacity, 1))}.checked\:bg-primary:checked{--tw-bg-opacity:1;background-color:rgb(76 175 80 / var(--tw-bg-opacity, 1))}</style><link type="image/png" rel="icon" href="https://public.readdy.ai/gen_page/readdy-logo.png"><link rel="stylesheet" href="./Agriculture Management_files/css2"></head>
+<body class="bg-white min-h-screen">
+    <header class="bg-white shadow-sm fixed top-0 left-0 right-0 z-50">
+        <div class="flex items-center justify-between px-6 h-16">
+            <div class="flex items-center gap-4">
+                <div class="text-xl font-bold text-primary">logo</div>
+                <div class="flex items-center gap-2 bg-gray-50 px-4 py-2 rounded-lg">
+                    <i class="ri-sun-line text-gray-600"></i>
+                    <span class="text-sm">72°F Sunny</span>
+                </div>
+            </div>
+            <div class="flex items-center gap-4">
+                <button class="!rounded-button bg-primary text-white px-4 py-2 flex items-center gap-2">
+                    <i class="ri-add-line"></i>
+                    <span>New Task</span>
+                </button>
+                <div class="w-10 h-10 flex items-center justify-center relative">
+                    <i class="ri-notification-3-line text-gray-600"></i>
+                    <span class="absolute top-1 right-1 w-2 h-2 bg-red-500 rounded-full"></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="pt-20 px-6 pb-20">
+        <div class="grid grid-cols-3 gap-6 mb-6">
+            <div class="bg-white shadow rounded-lg p-6">
+                <div class="flex justify-between items-center mb-4">
+                    <h3 class="font-semibold">Soil Moisture</h3>
+                    <div class="text-sm text-gray-500">Last updated: 2 min ago</div>
+                </div>
+                <div id="soilMoistureChart" class="h-48" _echarts_instance_="ec_1756806885034" style="user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);"><div style="position: relative; width: 427px; height: 192px; padding: 0px; margin: 0px; border-width: 0px;"><canvas data-zr-dom-id="zr_0" width="533" height="240" style="position: absolute; left: 0px; top: 0px; width: 427px; height: 192px; user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); padding: 0px; margin: 0px; border-width: 0px;"></canvas></div></div>
+            </div>
+            <div class="bg-white shadow rounded-lg p-6">
+                <div class="flex justify-between items-center mb-4">
+                    <h3 class="font-semibold">Temperature</h3>
+                    <div class="text-sm text-gray-500">Last 24 hours</div>
+                </div>
+                <div id="temperatureChart" class="h-48" _echarts_instance_="ec_1756806885035" style="user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);"><div style="position: relative; width: 427px; height: 192px; padding: 0px; margin: 0px; border-width: 0px; cursor: pointer;"><canvas data-zr-dom-id="zr_0" width="533" height="240" style="position: absolute; left: 0px; top: 0px; width: 427px; height: 192px; user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); padding: 0px; margin: 0px; border-width: 0px;"></canvas></div></div>
+            </div>
+            <div class="bg-white shadow rounded-lg p-6">
+                <div class="flex justify-between items-center mb-4">
+                    <h3 class="font-semibold">Resource Usage</h3>
+                    <div class="text-sm text-gray-500">This week</div>
+                </div>
+                <div id="resourceChart" class="h-48" _echarts_instance_="ec_1756806885036" style="user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);"><div style="position: relative; width: 427px; height: 192px; padding: 0px; margin: 0px; border-width: 0px; cursor: default;"><canvas data-zr-dom-id="zr_0" width="533" height="240" style="position: absolute; left: 0px; top: 0px; width: 427px; height: 192px; user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); padding: 0px; margin: 0px; border-width: 0px;"></canvas></div></div>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-3 gap-6">
+            <div class="col-span-2">
+                <div class="bg-white shadow rounded-lg p-6">
+                    <div class="flex justify-between items-center mb-4">
+                        <h3 class="font-semibold">Field Map</h3>
+                        <div class="flex gap-2">
+                            <button class="!rounded-button bg-gray-100 px-3 py-1.5 text-sm">Satellite</button>
+                            <button class="!rounded-button bg-primary text-white px-3 py-1.5 text-sm">Map</button>
+                        </div>
+                    </div>
+                    <div class="rounded-lg overflow-hidden h-[400px] bg-center bg-cover" style="background-image: url(&#39;https://public.readdy.ai/gen_page/map_placeholder_1280x720.png&#39;)"></div>
+                </div>
+            </div>
+            <div>
+                <div class="bg-white shadow rounded-lg p-6">
+                    <div class="flex justify-between items-center mb-4">
+                        <h3 class="font-semibold">Today's Tasks</h3>
+                        <button class="!rounded-button text-primary">View All</button>
+                    </div>
+                    <div class="space-y-4">
+                        <div class="flex items-start gap-3">
+                            <input type="checkbox" class="custom-checkbox mt-1 w-4 h-4 rounded bg-white border-2 border-gray-300 checked:bg-primary checked:border-primary">
+                            <div>
+                                <div class="font-medium">Irrigation Check - Field A</div>
+                                <div class="text-sm text-gray-500">9:00 AM - High Priority</div>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <input type="checkbox" class="custom-checkbox mt-1 w-4 h-4 rounded bg-white border-2 border-gray-300 checked:bg-primary checked:border-primary">
+                            <div>
+                                <div class="font-medium">Fertilizer Application</div>
+                                <div class="text-sm text-gray-500">11:00 AM - Medium Priority</div>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <input type="checkbox" class="custom-checkbox mt-1 w-4 h-4 rounded bg-white border-2 border-gray-300 checked:bg-primary checked:border-primary">
+                            <div>
+                                <div class="font-medium">Equipment Maintenance</div>
+                                <div class="text-sm text-gray-500">2:00 PM - Low Priority</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <nav class="fixed bottom-0 left-0 right-0 bg-white shadow-lg border-t">
+        <div class="flex justify-around py-2">
+            <button class="flex flex-col items-center p-2 text-primary">
+                <i class="ri-home-4-line text-xl"></i>
+                <span class="text-xs mt-1">Home</span>
+            </button>
+            <button class="flex flex-col items-center p-2 text-gray-500">
+                <i class="ri-map-2-line text-xl"></i>
+                <span class="text-xs mt-1">Fields</span>
+            </button>
+            <button class="flex flex-col items-center p-2 text-gray-500">
+                <i class="ri-task-line text-xl"></i>
+                <span class="text-xs mt-1">Tasks</span>
+            </button>
+            <button class="flex flex-col items-center p-2 text-gray-500">
+                <i class="ri-database-2-line text-xl"></i>
+                <span class="text-xs mt-1">Resources</span>
+            </button>
+            <button class="flex flex-col items-center p-2 text-gray-500">
+                <i class="ri-settings-3-line text-xl"></i>
+                <span class="text-xs mt-1">Settings</span>
+            </button>
+        </div>
+    </nav>
+
+    <script type="text/javascript" crossorigin="anonymous" src="./Agriculture Management_files/surveys.js.download"></script><script type="text/javascript" crossorigin="anonymous" src="./Agriculture Management_files/dead-clicks-autocapture.js.download"></script><script type="text/javascript" crossorigin="anonymous" src="./Agriculture Management_files/config.js.download"></script><script id="charts">
+        document.addEventListener('DOMContentLoaded', function() {
+            const soilMoistureChart = echarts.init(document.getElementById('soilMoistureChart'));
+            const temperatureChart = echarts.init(document.getElementById('temperatureChart'));
+            const resourceChart = echarts.init(document.getElementById('resourceChart'));
+
+            soilMoistureChart.setOption({
+                animation: false,
+                grid: { top: 0, right: 0, bottom: 0, left: 0 },
+                xAxis: {
+                    type: 'category',
+                    boundaryGap: false,
+                    show: false,
+                    data: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
+                },
+                yAxis: { show: false, type: 'value' },
+                series: [{
+                    data: [45, 52, 48, 55, 50, 58, 54],
+                    type: 'line',
+                    smooth: true,
+                    symbol: 'none',
+                    areaStyle: {
+                        color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
+                            offset: 0,
+                            color: 'rgba(87, 181, 231, 0.2)'
+                        }, {
+                            offset: 1,
+                            color: 'rgba(87, 181, 231, 0.05)'
+                        }])
+                    },
+                    lineStyle: { color: 'rgba(87, 181, 231, 1)' }
+                }]
+            });
+
+            temperatureChart.setOption({
+                animation: false,
+                grid: { top: 0, right: 0, bottom: 0, left: 0 },
+                xAxis: {
+                    type: 'category',
+                    boundaryGap: false,
+                    show: false,
+                    data: ['00:00', '04:00', '08:00', '12:00', '16:00', '20:00', '24:00']
+                },
+                yAxis: { show: false, type: 'value' },
+                series: [{
+                    data: [68, 65, 70, 75, 72, 69, 67],
+                    type: 'line',
+                    smooth: true,
+                    symbol: 'none',
+                    areaStyle: {
+                        color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
+                            offset: 0,
+                            color: 'rgba(141, 211, 199, 0.2)'
+                        }, {
+                            offset: 1,
+                            color: 'rgba(141, 211, 199, 0.05)'
+                        }])
+                    },
+                    lineStyle: { color: 'rgba(141, 211, 199, 1)' }
+                }]
+            });
+
+            resourceChart.setOption({
+                animation: false,
+                grid: { top: 0, right: 0, bottom: 0, left: 0 },
+                xAxis: { show: false, type: 'category' },
+                yAxis: { show: false, type: 'value' },
+                series: [{
+                    type: 'pie',
+                    radius: ['40%', '70%'],
+                    data: [
+                        { value: 40, name: 'Water' },
+                        { value: 30, name: 'Fertilizer' },
+                        { value: 30, name: 'Energy' }
+                    ],
+                    itemStyle: {
+                        color: function(params) {
+                            const colors = ['rgba(87, 181, 231, 1)', 'rgba(141, 211, 199, 1)', 'rgba(251, 191, 114, 1)'];
+                            return colors[params.dataIndex];
+                        }
+                    }
+                }]
+            });
+
+            window.addEventListener('resize', function() {
+                soilMoistureChart.resize();
+                temperatureChart.resize();
+                resourceChart.resize();
+            });
+        });
+    </script>
+<script>
+    !function (t, e) { var o, n, p, r; e.__SV || (window.posthog = e, e._i = [], e.init = function (i, s, a) { function g(t, e) { var o = e.split("."); 2 == o.length && (t = t[o[0]], e = o[1]), t[e] = function () { t.push([e].concat(Array.prototype.slice.call(arguments, 0))) } } (p = t.createElement("script")).type = "text/javascript", p.crossOrigin = "anonymous", p.async = !0, p.src = s.api_host.replace(".i.posthog.com", "-assets.i.posthog.com") + "/static/array.js", (r = t.getElementsByTagName("script")[0]).parentNode.insertBefore(p, r); var u = e; for (void 0 !== a ? u = e[a] = [] : a = "posthog", u.people = u.people || [], u.toString = function (t) { var e = "posthog"; return "posthog" !== a && (e += "." + a), t || (e += " (stub)"), e }, u.people.toString = function () { return u.toString(1) + ".people (stub)" }, o = "init capture register register_once register_for_session unregister unregister_for_session getFeatureFlag getFeatureFlagPayload isFeatureEnabled reloadFeatureFlags updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures on onFeatureFlags onSessionId getSurveys getActiveMatchingSurveys renderSurvey canRenderSurvey getNextSurveyStep identify setPersonProperties group resetGroups setPersonPropertiesForFlags resetPersonPropertiesForFlags setGroupPropertiesForFlags resetGroupPropertiesForFlags reset get_distinct_id getGroups get_session_id get_session_replay_url alias set_config startSessionRecording stopSessionRecording sessionRecordingStarted captureException loadToolbar get_property getSessionProperty createPersonProfile opt_in_capturing opt_out_capturing has_opted_in_capturing has_opted_out_capturing clear_opt_in_out_capturing debug".split(" "), n = 0; n < o.length; n++)g(u, o[n]); e._i.push([i, s, a]) }, e.__SV = 1) }(document, window.posthog || []);
+    posthog.init('phc_t9tkQZJiyi2ps9zUYm8TDsL6qXo4YmZx0Ot5rBlAlEd', {
+        api_host: 'https://us.i.posthog.com',
+        autocapture: false,
+        capture_pageview: false,
+        capture_pageleave: false,
+        capture_performance: {
+            web_vitals: false,
+        },
+        rageclick: false,
+    })
+    window.shareKey = 'mnygUM8juqcE8isX2A9Cxg';
+    window.host = 'readdy.ai';
+</script>
+<script src="./Agriculture Management_files/share.js.download"></script>
+<div id="watermark" class="group" style="position: fixed; bottom: 48px; right: 46px; width: 184px; height: 39px; background-color: rgb(240, 240, 240); border-style: solid; border-width: 3px; border-radius: 12px; border-image-slice: 3; border-image-width: 3px; border-image-outset: 0; border-color: rgb(229, 231, 235); display: flex; align-items: center; justify-content: center; cursor: pointer;"><div class="designed-by" style="color: rgb(93, 93, 93); font-family: &quot;Secular One&quot;; font-size: 12px; line-height: 20px; font-weight: 400; padding-left: 12px;">Designed by</div><img src="./Agriculture Management_files/watermark.png" style="width: 86px; margin-left: 0px;"></div></body></html>
